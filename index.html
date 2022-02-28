@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SearchMe App</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External links end -->
+    <title>SearchMe App</title>
   </head>
   <body>
     <main>
-      <h1 class="offscreen">Seach Me a Wikipidia Powered search engine</h1>
+      <h1 class="offscreen">Seach Me A Wikipidia Powered Search Engine</h1>
       <section class="search-entry">
         <h2 class="offscreen">Search Term Entry</h2>
         <div class="logo" aria-hidden="true">SearchMe</div>
@@ -21,11 +37,59 @@
             type="text"
             name="search"
             id="search"
-            autocomplete="false"
+            autocomplete="off"
             aria-autocomplete="list"
           />
+          <div
+            id="clear"
+            class="none btn clear"
+            role="button"
+            tabindex="0"
+            aria-label="Clear search terms"
+          >
+            <i class="fas fa-times"></i>
+          </div>
+          <button
+            id="searchButton"
+            class="button searchButton"
+            type="submit"
+            aria-label="submit-button"
+          >
+            <i class="fas fa-search"></i>
+          </button>
         </form>
       </section>
+
+      <section class="results">
+        <h2 class="offscreen">Search Results</h2>
+        <div class="startBar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+        </div>
+        <div id="searchResults" class="searchResults">
+          <div class="resultItem">
+            <div class="resultTitle">
+              <a href="">Dachsund</a>
+            </div>
+            <div class="resultContent">
+              <div class="resultImage">
+                <img src="" alt="Dachsund" />
+              </div>
+              <div class="resultText">
+                <p class="resultDescription"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>
+        <span aria-hidden="true">&lt;&lt;</span>
+        Powered by
+        <a href="https://www.wikipedia.org" target="_blank">Wikipidia</a>
+        <span aria-hidden="true">&gt;&gt;</span>
+      </p>
+    </footer>
   </body>
 </html>
