@@ -1,6 +1,6 @@
 # SearchMe Search App
 
-Simple search javaScript web application
+javaScript search web application using the wikipedia api.
 
 ### Project Overview
 
