@@ -20,29 +20,41 @@
       rel="stylesheet"
     />
     <!-- External links end -->
+    <link rel="stylesheet" href="/styles/style.min.css" />
+    <script src="./js/main.js" type="module"></script>
     <title>SearchMe App</title>
   </head>
   <body>
     <main>
       <h1 class="offscreen">Seach Me A Wikipidia Powered Search Engine</h1>
-      <section class="search-entry">
+      <section class="searchEntry">
         <h2 class="offscreen">Search Term Entry</h2>
-        <div class="logo" aria-hidden="true">SearchMe</div>
+        <div class="logo" aria-hidden="true">
+          <span class="blue">S</span>
+          <span class="yellow">e</span>
+          <span class="green">a</span>
+          <span class="red">r</span>
+          <span class="blue">c</span>
+          <span class="blue">h</span>
+          <span class="red">M</span>
+          <span class="yellow">e</span>
+          <span class="red exclaim">!</span>
+        </div>
 
-        <form id="searchBar" class="search-bar">
+        <form id="searchBar" class="searchBar" role="search">
           <label for="search" class="offscreen"
             >Enter a search term of phrase.</label
           >
           <input
             type="text"
-            name="search"
             id="search"
+            role="searchbox"
             autocomplete="off"
             aria-autocomplete="list"
           />
           <div
             id="clear"
-            class="none btn clear"
+            class="none button clear"
             role="button"
             tabindex="0"
             aria-label="Clear search terms"
@@ -55,30 +67,30 @@
             type="submit"
             aria-label="submit-button"
           >
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search blue"></i>
           </button>
         </form>
       </section>
 
       <section class="results">
         <h2 class="offscreen">Search Results</h2>
-        <div class="startBar">
+        <div class="statsBar">
           <div id="stats" class="stats" aria-live="assertive"></div>
         </div>
         <div id="searchResults" class="searchResults">
-          <div class="resultItem">
+          <!-- <div class="resultItem">
             <div class="resultTitle">
               <a href="">Dachsund</a>
             </div>
             <div class="resultContent">
-              <div class="resultImage">
+              <div class="e">
                 <img src="" alt="Dachsund" />
               </div>
               <div class="resultText">
                 <p class="resultDescription"></p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
     </main>
