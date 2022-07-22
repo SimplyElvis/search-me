@@ -1,8 +1,6 @@
-# SearchMe Search App
+# SearchMe wikipedia Search App
 
-javaScript search web application using the wikipedia api.
-
-### Project Overview
+Search for anything on [wikisearch]('https://wikisearch.web.app'). Search functionality implemented using the wikipedia api.
 
 - Accessibility
 - Mobile-First workFlow
